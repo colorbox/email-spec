@@ -7,7 +7,6 @@ rvm:
 before_install:
   - travis_retry gem update --system || travis_retry gem update --system 2.7.8
   - travis_retry gem install bundler --no-document || travis_retry gem install bundler --no-document -v 1.17.3
-  - gem update bundler
 before_script:
   - bundle install --gemfile=examples/rails4_root/Gemfile
   - bundle install --gemfile=examples/sinatra_root/Gemfile
